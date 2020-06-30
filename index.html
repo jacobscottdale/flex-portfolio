@@ -1,0 +1,172 @@
+<!--Instructions: Create a portfolio with the following:
+
+Code Requirements
+
+Create a page layout using flexbox.
+Implement appropriate media queries for responsive design.
+Utilize semantic, valid markup
+Build your page from scratch (no template usage)
+Detail and quality requirements
+
+Page should not have typos and should offer content clarity and readability
+Page Content Requirements
+
+Intro Section:
+-Who you are
+-Where you are
+-What you do and what makes you special
+
+About Me section:
+-demonstrate your passion for the web
+-demonstrate desire to work on a team with great programmers
+-show your personality outside of coding
+-List of services you can (or want to) provide a client.
+
+Contact Section:
+-email address
+-link to your github profile
+-link to your linkedin profile
+
+Project section
+-Project Title
+-Project Description
+-link to Project
+(Note: You may not have developed projects yet. Setup your portfolio with placeholder content. You'll replace this placeholder content as you move through the program and complete assignments. Placeholder content for all of the following is acceptable.)
+
+Sample project listing
+Title of the project
+Description that explains what the app does, who it's for, why you built it.
+Skills used (what is the stack)
+(Optional) Screenshot that presents the app appropriately - may be a placeholder - the actual image does not really matter.
+Link to the GitHub repo of the project
+Link to live, working app-->
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Jacob Dale</title>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' rel='stylesheet'
+        type='text/css' />
+    <link href='style.css' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Jacob Dale</h1>
+    </header>
+    <main>
+
+        <section id='intro'>
+            <div class='group'>
+                <h2>Hello!<br>I'm Jacob, a web designer based in Brooklyn.</h2>
+                <div class='item justify-type pink-text'>
+                    <p>I want to introduce myself so you are interested in getting to know me better. I'll share more
+                        here on what I do professional so that people that are looking for those skills will want to
+                        hire me.</p>
+
+                    <p>This content doesn't need to be really long. Having at least two paragraphs will seem more
+                        welcoming. Balancing out the size of the photo and the length of this written content can be
+                        changed based on the column arrangement you use.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id='portfolio' class='orange-background'>
+            
+            <h2>Portfolio</h2>
+            <div class='group'>
+                
+                <div class='column'>
+                    <div class='item'>
+                        <img src='placeholder.png' alt='' width='100%'>
+                        <h3>Placeholder Project 1</h3>
+                        <p>I'm baby mollit bitters tote bag, et mustache quis shoreditch. IPhone artisan pitchfork
+                            church-key street art. Chambray roof party squid hot chicken, thundercats kickstarter
+                            actually
+                            taiyaki heirloom bushwick tofu vape semiotics. Synth seitan direct trade iceland ut
+                            kickstarter
+                            organic cray humblebrag est shoreditch fingerstache chia.</p>
+                            <a href=#>live app</a>
+                            <a href=#>github repo</a>
+                    </div>
+
+                    <div class='item'>
+                        <img src='placeholder.png' alt='' width='100%'>
+                        <h3>Placeholder Project 2</h3>
+                        <p>Tempor occaecat tofu semiotics lumbersexual tote bag yr iceland adaptogen wolf direct trade
+                            do
+                            literally ethical art party. Lorem mixtape poutine cred, 8-bit aliquip jianbing exercitation
+                            banjo poke in offal veniam gluten-free slow-carb. Green juice brooklyn photo booth magna
+                            wayfarers. Umami neutra tempor slow-carb ex non, nulla austin air plant.</p>
+                            <a href=#>live app</a>
+                            <a href=#>github repo</a>
+                    </div>
+                </div>
+                <div class='column'>
+                    <div class='item'>
+                        <img src='placeholder.png' alt='' width='100%'>
+                        <h3>Placeholder Project 3</h3>
+                        <p>IPhone yuccie kale chips skateboard wayfarers elit irure chartreuse ut portland. Cillum
+                            ethical
+                            non, VHS biodiesel lorem raw denim humblebrag lumbersexual hell of aliqua iPhone laborum
+                            edison
+                            bulb XOXO. Affogato cupidatat PBR&B woke, celiac sustainable listicle locavore fam YOLO
+                            viral
+                            venmo tilde excepteur next level. Photo booth small batch taxidermy pour-over mumblecore,
+                            bushwick gentrify fugiat nulla banh mi.</p>
+                            <a href=#>live app</a>
+                            <a href=#>github repo</a>
+                    </div>
+                    <div class='item'>
+                        <img src='placeholder.png' alt='' width='100%'>
+                        <h3>Placeholder Project 4</h3>
+                        <p>Yuccie literally narwhal cupidatat adipisicing, mumblecore shoreditch letterpress mustache
+                            cold-pressed. Nisi gochujang enim street art affogato irure taxidermy mollit microdosing
+                            adaptogen. Sartorial minim cupidatat, officia esse semiotics viral migas est irony. Elit
+                            aesthetic mumblecore roof party ea aute. Fixie tbh woke, single-origin coffee lorem green
+                            juice
+                            hella ut kickstarter VHS banjo wayfarers occaecat quinoa. Cardigan paleo shoreditch
+                            reprehenderit readymade pariatur aute, elit kickstarter kale chips bespoke.</p>
+                            <a href=#>live app</a>
+                            <a href=#>github repo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id='about-me'>
+            <h2>About Me</h2>
+            <div class='group'>
+                
+                <div class='item'>
+                    <p>Use this space to explain who you are in greater detail to others in a professional stance. Share
+                        what you enjoy about coding and why.</p>
+
+                    <p>When I'm not coding, what are you doing for fun, fitness, etc. This little blurb can help others
+                        identify with you. What, you rock climb, too? Sweet!!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id='contact'>
+            <h2>Contact</h2>
+            <div class='group'>
+                <div class='item'>
+                    <a href='https://www.github.com/jacobscottdale' target='_blank'>GitHub</a>
+                </div>
+                <div class='item'>
+                    <a href='mailto:jacobscottdale@gmail.com' target='_blank'>jacobscottdale@gmail.com</a>
+                </div>
+                <div class='item'>
+                    <a href='https://www.linkedin.com/in/jacob-dale-2bb45362/' target='_blank'>LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
