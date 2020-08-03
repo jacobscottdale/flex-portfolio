@@ -12,50 +12,6 @@
 </head>
 
 <body>
-    <!--Instructions: Create a portfolio with the following:
-
-Code Requirements:
-
--Create a page layout using flexbox.
--Implement appropriate media queries for responsive design.
--Utilize semantic, valid markup
--Build your page from scratch (no template usage)
-
-Detail and quality requirements:
-
--Page should not have typos and should offer content clarity and readability
-
-Page Content Requirements:
-
-Intro Section:
--Who you are
--Where you are
--What you do and what makes you special
-
-About Me section:
--demonstrate your passion for the web
--demonstrate desire to work on a team with great programmers
--show your personality outside of coding
--List of services you can (or want to) provide a client.
-
-Contact Section:
--email address
--link to your github profile
--link to your linkedin profile
-
-Project section:
--Project Title
--Project Description
--link to Project
-(Note: You may not have developed projects yet. Setup your portfolio with placeholder content. You'll replace this placeholder content as you move through the program and complete assignments. Placeholder content for all of the following is acceptable.)
-
-Sample project listing
-Title of the project
-Description that explains what the app does, who it's for, why you built it.
-Skills used (what is the stack)
-(Optional) Screenshot that presents the app appropriately - may be a placeholder - the actual image does not really matter.
-Link to the GitHub repo of the project
-Link to live, working app-->
     <header>
         <h1>Jacob Dale</h1>
     </header>
@@ -67,22 +23,13 @@ Link to live, working app-->
                 I'm Jacob, a web designer based in Brooklyn.
             </p>
             <div class='group'>
-                <!--
-                    <div class='item intro-picture'>
-                    <img src='jacob-and-rojak.jpg' alt='' width='100%'>
-                </div>
-                -->
                 <div class='item justify-type pink-text intro-text'>
                     <p>
-                        I want to introduce myself so you are interested in getting to know me better. I'll share more
-                        here on what I do professional so that people that are looking for those skills will want to
-                        hire me.
+                        I am a full-stack developer currently making my way through Thinkful's Web Development program. 
                     </p>
 
                     <p>
-                        This content doesn't need to be really long. Having at least two paragraphs will seem more
-                        welcoming. Balancing out the size of the photo and the length of this written content can be
-                        changed based on the column arrangement you use.
+                        I work with HTML, CSS, and Javascript, including jQuery and API applications. I build functional forms, fetch content from third-parties and design fully interactive sites using Javascript.
                     </p>
                 </div>
             </div>
@@ -96,7 +43,7 @@ Link to live, working app-->
                     <div class='item column-left'>
                         <img src='placeholder.png' alt='' width='100%'>
                         <h3>Placeholder Project 1</h3>
-                        <p>
+                        <p class='justify-type'>
                             I'm baby mollit bitters tote bag, et mustache quis shoreditch. IPhone artisan pitchfork
                             church-key street art. Chambray roof party squid hot chicken, thundercats kickstarter
                             actually
@@ -117,7 +64,7 @@ Link to live, working app-->
                     <div class='item column-right'>
                         <img src='placeholder.png' alt='' width='100%'>
                         <h3>Placeholder Project 2</h3>
-                        <p>
+                        <p class='justify-type'>
                             Tempor occaecat tofu semiotics lumbersexual tote bag yr iceland adaptogen wolf direct trade
                             do
                             literally ethical art party. Lorem mixtape poutine cred, 8-bit aliquip jianbing exercitation
@@ -138,7 +85,7 @@ Link to live, working app-->
                     <div class='item column-left'>
                         <img src='placeholder.png' alt='' width='100%'>
                         <h3>Placeholder Project 3</h3>
-                        <p>
+                        <p class='justify-type'>
                             IPhone yuccie kale chips skateboard wayfarers elit irure chartreuse ut portland. Cillum
                             ethical
                             non, VHS biodiesel lorem raw denim humblebrag lumbersexual hell of aliqua iPhone laborum
@@ -160,7 +107,7 @@ Link to live, working app-->
                     <div class='item column-right'>
                         <img src='placeholder.png' alt='' width='100%'>
                         <h3>Placeholder Project 4</h3>
-                        <p>
+                        <p class='justify-type'>
                             Yuccie literally narwhal cupidatat adipisicing, mumblecore shoreditch letterpress mustache
                             cold-pressed. Nisi gochujang enim street art affogato irure taxidermy mollit microdosing
                             adaptogen. Sartorial minim cupidatat, officia esse semiotics viral migas est irony. Elit
@@ -188,21 +135,28 @@ Link to live, working app-->
             <div class='group'>
 
                 <div class='item'>
-                    <p>
-                        Use this space to explain who you are in greater detail to others in a professional stance. Share
-                        what you enjoy about coding and why.
+                    <p class='justify-type'>
+                        Coding is problem solving, and that's what I love about it. When nearly every coding problem can be solved in a million different ways, it's exciting to discover the most efficient way.
                     </p>
 
-                    <p>
-                        When I'm not coding, what are you doing for fun, fitness, etc. This little blurb can help others
-                        identify with you. What, you rock climb, too? Sweet!!
+                    <p class='justify-type'>
+                        When I'm not wrapping my head around code, I'm most likely hanging out with my dog, Rojak, or trying out a new recipe in the kitchen. And when I'm not doing that stuff I'm probably tweaking my Stardew Valley farm...
                     </p>
                 </div>
             </div>
         </section>
 
         <section id='contact' class='blue-background'>
-            
+            <form id='contact-form' action="https://formspree.io/jacobscottdale@gmail.com"
+            method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="your-message">Your message:</label>
+                <textarea name="your-message" id="your-message" cols="30" rows="10"></textarea>
+                <button type="submit">Send</button>
+            </form>
             <div class='group'>
                 <div class='item item-left'>
                     <a href='https://www.github.com/jacobscottdale' target='_blank'>GitHub</a>
