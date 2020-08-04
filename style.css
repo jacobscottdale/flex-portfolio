@@ -9,12 +9,18 @@ html {
 
 header {
     display: flex;
+    flex-direction: column;
     position: fixed;
     align-items: center;
     width: 100%;
     background-color: #D6e3ed;
     color: #f37020;
     height: 40px;
+    padding-left: 24px;
+}
+
+header a {
+    color: #f37020;
 }
 
 a {
@@ -23,9 +29,13 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 h1 {
     font-size: 20px;
-    margin: 0 0 0 24px;
+    margin: 0;
     text-transform: uppercase;
     cursor: default;
 }
@@ -42,8 +52,7 @@ h1 {
 .group {
     display: flex;
     flex-direction: column;
-    
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 .item {
@@ -53,6 +62,7 @@ h1 {
 
 #portfolio img {
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .pink-text {
@@ -62,6 +72,10 @@ h1 {
 .orange-background {
     background-color: #f37020;
     color: white;
+}
+
+.orange-text {
+    color: #f37020;
 }
 
 .blue-background {
@@ -90,9 +104,8 @@ h1 {
     color: white;
 }
 
-header:hover {
-    background-color: #f37020;
-    color: #D6e3ed;
+.flex-group {
+    display: flex;
 }
 
 h3 {
@@ -170,21 +183,19 @@ textarea {
 button {
     border: none;
     color: white;
-    background-color: #f37020;
+    background-color: #f05e81;
     padding: 5px;
 }
 
+li {
+    padding: 0 10px;
+}
 
 @media all and (min-width: 800px) {
     
     .portfolio-container {
         display: flex;
         padding-right: 10px;
-    }
-
-
-    h1 {
-        margin: 0 0 0 200px;
     }
 
     #contact .group {
@@ -216,5 +227,27 @@ button {
     .item-right {
         text-align: right;
     }
+
+    header {
+        
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0;
+        
+    }
+
+    h1 {
+        padding-left: 200px;
+    }
+
+    header:hover {
+        background-color: #f37020;
+        color: #D6e3ed;
+    }
+
+    ul {
+        padding-right: 50px;
+    }
+    
 }
 
