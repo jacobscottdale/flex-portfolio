@@ -16,11 +16,36 @@ header {
     background-color: #D6e3ed;
     color: #f37020;
     height: 40px;
-    padding-left: 24px;
+    
+}
+
+header:hover {
+    background-color: #f37020;
+    color: #D6e3ed;
+}
+
+header:hover * {
+    color: #D6e3ed;
 }
 
 header a {
     color: #f37020;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.flex-group {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 0 10px;
 }
 
 a {
@@ -29,15 +54,12 @@ a {
     text-decoration: none;
 }
 
-li {
-    list-style: none;
+section {
+    padding: 60px 24px 0 24px;
 }
 
-h1 {
-    font-size: 20px;
-    margin: 0;
-    text-transform: uppercase;
-    cursor: default;
+h2 {
+    margin-bottom: 16px;
 }
 
 .greeting-text {
@@ -60,69 +82,18 @@ h1 {
     margin-bottom: 60px;
 }
 
+p {
+    margin-bottom: 16px;
+}
+
 #portfolio img {
     margin-bottom: 24px;
     width: 100%;
 }
 
-.pink-text {
-    color: #f05e81;
-}
-
-.orange-background {
-    background-color: #f37020;
-    color: white;
-}
-
-.orange-text {
-    color: #f37020;
-}
-
-.blue-background {
-    background-color: #D6e3ed;
-}
-
-.pink-background {
-    background-color: #f05e81;
-    color: #D6e3ed;
-}
-
-#contact a {
-    color: #f05e81;
-}
-
-#portfolio a {
-    color: #D6e3ed;
-    margin-bottom: 10px;
-}
-
-.red-text {
-    color: #ed1f26;
-}
-
-#portfolio a:hover {
-    color: white;
-}
-
-.flex-group {
-    display: flex;
-}
-
 h3 {
     font-size: 20px;
     margin-bottom: 16px;
-}
-
-p {
-    margin-bottom: 16px;
-}
-
-h2 {
-    margin-bottom: 16px;
-}
-
-section {
-    padding: 60px 24px 0 24px;
 }
 
 .container {
@@ -139,6 +110,19 @@ section {
 
 .sub-item-left {
     text-align: left;
+}
+
+#portfolio a {
+    color: #D6e3ed;
+    margin-bottom: 10px;
+}
+
+#portfolio a:hover {
+    color: white;
+}
+
+#contact a {
+    color: #f05e81;
 }
 
 #contact .item {
@@ -187,20 +171,45 @@ button {
     padding: 5px;
 }
 
-li {
-    padding: 0 10px;
+.pink-text {
+    color: #f05e81;
+}
+
+.orange-text {
+    color: #f37020;
+}
+
+.red-text {
+    color: #ed1f26;
+}
+
+.orange-background {
+    background-color: #f37020;
+    color: white;
+}
+
+.blue-background {
+    background-color: #D6e3ed;
+}
+
+.pink-background {
+    background-color: #f05e81;
+    color: #D6e3ed;
 }
 
 @media all and (min-width: 800px) {
-    
-    .portfolio-container {
-        display: flex;
-        padding-right: 10px;
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0;
     }
 
-    #contact .group {
-        flex-direction: row;
-        text-align: center;
+    ul {
+        padding-right: 50px;
+    }
+
+    h1 {
+        padding-left: 200px;
     }
 
     section {
@@ -209,7 +218,13 @@ li {
 
     .portfolio-container {
         display: flex;
+        padding-right: 10px;
         flex: 1;
+    }
+
+    #contact .group {
+        flex-direction: row;
+        text-align: center;
     }
 
     .column-left {
@@ -226,27 +241,6 @@ li {
 
     .item-right {
         text-align: right;
-    }
-
-    header {
-        
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: 0;
-        
-    }
-
-    h1 {
-        padding-left: 200px;
-    }
-
-    header:hover {
-        background-color: #f37020;
-        color: #D6e3ed;
-    }
-
-    ul {
-        padding-right: 50px;
     }
     
 }
